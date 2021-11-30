@@ -9,7 +9,7 @@ import {
     OggAdapter,
     WavAdapter,
     downloadBlob
-} from '../recording';
+} from '../recording'; 
 import { sessionManager } from '../session';
 
 /**
@@ -319,6 +319,7 @@ class RecordingController {
      * @param {number} sessionToken - The token of the session to download.
      * @returns {void}
      */
+    // aqui cosa
     downloadRecordedData(sessionToken: number) {
         if (this._adapters[sessionToken]) {
             this._adapters[sessionToken].exportRecordedData()

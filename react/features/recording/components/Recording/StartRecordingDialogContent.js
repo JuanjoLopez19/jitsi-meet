@@ -178,6 +178,7 @@ class StartRecordingDialogContent extends Component<Props> {
             t
         } = this.props;
 
+        // Inserta en la página web el cuadro de dialogo 
         return (
             <Container
                 className = 'recording-header'
@@ -310,6 +311,7 @@ class StartRecordingDialogContent extends Component<Props> {
             );
         }
 
+        // Para subir con el dropbox
         if (this.props.fileRecordingsServiceEnabled) {
             switchContent = (
                 <Switch
